@@ -1,0 +1,124 @@
+@import "partials/variables";
+.body2 {
+    background-image:linear-gradient(-90deg,#6ABBF7, #BD7CFA) ;
+}
+
+#menu2{
+    background: $color8;
+    height: 45px;
+	padding-left: 14px;
+	border-radius: 10px;
+        ul{
+            width: $tama;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            li{	
+                margin: 0 auto;
+                padding: 0px;
+                list-style: none;
+                float: left;
+                display: inline;
+                position: relative;
+                a{
+                    display: block;
+                    font-family:$font ;
+                    line-height: 45px;
+                    padding: 0 14px;
+                    text-decoration: none;
+                    color: $color12;
+                    font-size: 16px;
+                    &:hover{
+                        color: $color4;
+                        background: $color11;
+                    }
+                }
+            }
+        }
+}
+
+.envios{
+    font-family: $font;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: envios 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes envios {
+    0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+    }
+}
+
+
+form{
+    background-color: $color8;
+    margin:10px;
+	margin:0 auto;
+	border-radius:19px;
+	width: 40%;
+	position: absolute;
+	top:$tama/2; 
+	left:$tama/2;
+	transform: translate(-50%, -50%);
+}
+#formulario{
+    font-family:$font2;
+    background:$color9;
+    color: $color11;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom: 5px solid $color10;
+    margin-bottom:5px;
+    }
+label{
+    margin-left: 8px;
+    font-size: 13px;
+    padding: 5px;
+    display:block;
+    width: $tama;
+    font-family: $font;
+}
+input{
+    margin-bottom:10px; 
+    width: 95%;
+    padding: 2%;
+    margin-left: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid $color11;
+    font-style: $font; 
+    &:focus{
+        background-color: $color11;
+        }
+}
+
+
+@media screen and (min-width:300px) {
+	form{
+		height: 70%;
+		width: 90%;
+	}
+	
+}
+
+@media screen and (max-width: 700px){
+    #formulario{
+		font-size: 15px;
+	}
+	form{
+		height: $tama/2;
+		width: 80%;
+	}
+}

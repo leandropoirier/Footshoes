@@ -1,0 +1,60 @@
+@import "partials/variables";
+
+.item-0{
+	background-color:$color12;
+	color: $color5;
+	padding: 20px;
+	border: 10px outset $color6;
+	border-radius: 20px 20px 20px 20px;
+	animation: item-0 20s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes item-0 {
+	0% {
+		letter-spacing: 0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+}
+.item-1{
+    @extend .item-0;
+	color:$color3;
+	animation: item-1 20s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes item-1 {
+	0% {
+		letter-spacing: 0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+}
+		
+.item-2{
+	@extend .item-0;
+	color: $color11;
+	animation: item-2 20s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes item-2 {
+	0% {
+		letter-spacing: 0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+}

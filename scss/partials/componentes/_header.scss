@@ -1,0 +1,86 @@
+@import "partials/variables";
+
+header{
+    .icono{
+        height:$tama-img;
+        width: 380px;
+    }
+}
+.envios{
+    margin-bottom: 20px;
+    text-align: center;
+    animation: envios 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes envios {
+    0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+    }
+}
+
+#menu{
+    max-width: $tama;
+    background: $color2;
+    height: 45px;
+    padding-left: 14px;
+    border-radius: 10px;
+    ul{
+        max-width: $tama;
+        width: $tama;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li{
+            float: left;
+            display: inline;
+            position: relative;
+            margin: 0 auto;
+            padding: 0px;
+            list-style: none;
+            a{
+                display: block;
+                line-height: 45px;
+                padding: 0 14px;
+                text-decoration: none;
+                color: $color3;
+                font-size: 16px;
+                &:hover{
+                    color:$color4;
+                    background:$color11;
+                    &:after{
+                        content: "\25BE";
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px){
+	.icono{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-left: 29%;
+	}
+	
+	header{
+		max-width: $tama;
+	}
+}
+
+@media screen and (min-width: 701px){
+    .icono{
+		margin-left:42%;
+	}	
+}

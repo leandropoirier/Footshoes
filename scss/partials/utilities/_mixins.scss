@@ -1,0 +1,31 @@
+@import "partials/variables";
+
+@mixin item {
+    max-width: $tama;
+	height: $tama-img;
+	width: $tama-img;
+}
+
+.item-3 img{
+    @include item;
+}
+
+.item-4 img{
+    @include item;
+}
+
+.item-5 img{
+    @include item;
+}
+
+.item-6 img{
+    @include item;
+}
+
+.item-7 img{
+    @include item;
+}
+
+.item-8 img{
+    @include item;
+}
